@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Electrolize', sans-serif;
+    scroll-behavior: smooth;
+    background-image:linear-gradient(45deg, #090909 0%, #141414 100%) ;
+}
+
+p {
+	color: rgb(255, 255, 255);
+	font-size: 1.4rem;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	letter-spacing: 0.05rem;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo h1{
+    font-size: 3rem;
+	color: white;
+	letter-spacing: 0.2rem;
+}
+.jeet{
+    color: #7e7e7e;
+}
+.dot{
+    color: #fc3636;
+}
+
+#header {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+    
+}
+
+#header .header{
+    min-height: 8vh;
+}
+#header .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1300px;
+	padding: 0 10px;
+}
+#navbar-list ul {
+	list-style: none;
+    display: flex;
+}
+#navbar-list ul a{
+    padding: 20px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 00.2rem;
+}
+
+#navbar-list ul li:hover a {
+	color: #fc3636;
+}
+
+.menu-btns{
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.bar{
+    width: 30px;
+    height: 2px;
+    margin: 8px 0;
+    background-color: #e4e4e4;
+}
+.bar-mid{
+    width: 30px;
+    height: 2px;
+    margin: 8px 0;
+    margin-left: 8px;
+    background-color: #fc3636;
+}
+
+/* Header end*/
+
+/*hero start*/
+
+#hero{
+    background-image: url(./bg.png);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+
+#hero .hero {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+#hero h1 {
+	display: block;
+	width: fit-content;
+	font-size: 7rem;
+	position: relative;
+	color: transparent;
+	animation: text_reveal 0.5s ease forwards;
+	animation-delay: 1s;
+    color: white;
+}
+#hero .my-name{
+    color: #fc3636;
+}
+#hero h3{
+    color: #7e7e7e;
+    font-size: 2rem;
+}
+#hero h3 span{
+    color: white;
+    letter-spacing: .2rem;
+}
+.subtitle{
+    padding-top: 20px;
+}
+
+/*hero end*/
+
+/*project start*/
+#project{
+    align-items: center;
+   
+}
+.project-container {
+    min-height: 100vh;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}
+#projects .project {
+	flex-direction: column;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#projects .project-header h1 {
+	margin-bottom: 50px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.proj-title{
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    color: white;
+    text-align: center;
+}
+.proj-title span{
+    color: #fc3636;
+}
+.project-box{
+    display: flex;
+    height: 300px;
+    padding: 20px 0px;
+
+}
+
+.project-box p{
+    width: 50%;
+    margin: auto;
+    padding: 0px 20px;
+}
+.project-box img{
+    width: 50%;
+    height: 100%;
+}
+
+/*project end*/
+
+/*about start*/
+
+#about{
+    width: 100%;
+    margin: auto;
+    padding-top: 10rem;
+}
+.about-container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-left{
+    width: 40%;
+    
+}
+.col-left img{
+    width: 100%;
+}
+.col-right{
+    width: 50%;
+    height: 100%;
+    margin-right: 5rem;
+    margin-top: 0rem;
+}
+
+.col-right h2{
+    font-size: 1.8rem;
+    letter-spacing: .3rem;
+    color: #7e7e7e;
+}
+.section-title{
+    padding-bottom: 2rem;
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    color: white;
+    text-align: left;
+}
+.section-title span{
+    color: #fc3636;
+}
+/*about end*/
+
+/*contact start*/
+
+#contact{
+    padding-top: 50px;
+    margin: 10rem auto;
+    width: 100%;
+}
+.Contact-title{
+    padding-bottom: 2rem;
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    color: white;
+    text-align: center;
+    margin: 10rem;
+}
+.Contact-title span{
+    color: #fc3636;
+}
+.contact-box{
+    display: flex;
+    
+}
+.contact-head{
+    border-style: solid;
+    border-color: #fc3636;
+    margin: auto;
+    height: 200px;
+    width: 300px;
+    align-items: center;
+    
+}
+.contact-head:hover{
+    box-shadow: 0px 0px 5px 0 #fc3636;
+}
+
+.icon{
+   width: 64px;
+   margin: 15px auto;
+
+    
+}
+.contact-head h1{
+    color: white;
+    letter-spacing: .2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 300;
+}
+.contact-head h2{
+    color: #7e7e7e;
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 200;
+    margin: auto;
+}
+/*contact end*/
+/*footer start*/
+.footer-box{
+    background-color: #fc3636;
+    margin-top: 30rem;
+}
+.logo2 h1{
+    font-size: 3rem;
+	color: white;
+	letter-spacing: 0.2rem;
+    text-align: center;
+    padding-top: 6rem;
+}
+.footer-sub{
+    color: #e4e4e4;
+    letter-spacing: .3rem;
+    text-align: center;
+    margin: 1rem;
+}
+.social-media{
+    display: flex;
+    margin: auto;
+    width: fit-content;
+}
+.social-icon{
+    margin: 20px 10px;
+    opacity: 0.8;
+	transition: 0.3s ease filter;
+
+}
+.social-icon:hover{
+    opacity: 1;
+}
+.copyright{
+    text-align: center;
+    padding: 10px;
+}
+
+/*desktop-------------------*/
+
+@media only screen and (min-width: 1025px){
+    .menu-btns{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+
+    #mbar{
+        display: block;
+    }
+    #mbar2{
+        display: block;
+    }
+
+    #navbar-list{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background-color: #090909;
+        top: 0%;
+        left:0%;
+    }
+
+    #header .nav-list ul{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    #header .nav-list ul li{
+        margin:10rem auto ;
+    }
+    #header .nav-list ul li:hover a {
+        color: #ffffff;
+    }
+
+
+    #contact{
+        margin-top: 0px;
+    }
+
+    .contact-head{
+        width: 250px;
+        height: 180px;
+    }
+    .contact-head h1{
+        font-size: 2rem;
+    }
+    .contact-head h2{
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    .icon{
+        width: 50px;
+    }
+    .icon img{
+        width: 50px;
+        height: 50px;
+    }
+    .footer-box{
+        margin-top: 15rem;
+    }
+}
+
+
+     /*--------Tablet-------*/
+
+@media only screen and (max-width: 768px){
+    #hero h1{
+        font-size: 5rem;
+    }
+
+    #hero h3{
+        font-size: 1.5rem;
+    }
+
+    .project-container{
+        height: max-content;
+    }
+
+    .proj-title{
+        font-size: 4rem;
+    }
+
+    .project-box img{
+        display: none;
+    }
+    .project-box p{
+        text-align: center;
+        width: 80%;
+    }
+
+    .about-container{
+        display: inline;
+    }
+
+    .col-left{
+        margin: 20px auto;
+        width: 60%;
+    }
+
+    .col-right{
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .col-right h2{
+        text-align: center;
+    }
+
+    .col-right p{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .section-title{
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .Contact-title{
+        font-size: 4rem;
+        margin: 8rem auto;
+    }
+
+    .contact-box{
+        display: inline;
+    }
+
+    .contact-head{
+        width: 70%;
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (max-width: 425px){
+
+    .container{
+        min-height: 70vh;
+    }
+    
+    #hero h1{
+        font-size: 4rem;
+    }
+
+    #hero h3{
+        font-size: 1.3rem;
+    }
+
+    .proj-title{
+        font-size: 3.5rem;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    .section-title{
+        font-size: 3.5rem;
+    }
+    .col-right h2{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .Contact-title{
+        font-size: 3.5rem;
+        margin: 10rem auto;
+    }
+
+    #footer{
+        height: fit-content;
+    }
+
+    .copyright{
+        font-size: 1.2rem;
+    }
+}
