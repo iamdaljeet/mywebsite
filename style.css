@@ -494,6 +494,10 @@ a {
     #hero h3{
         font-size: 1.3rem;
     }
+	
+    #hero .hero{
+        padding: 0 20px;
+    }
 
     .proj-title{
         font-size: 3.5rem;
