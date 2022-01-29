@@ -101,6 +101,7 @@ a {
     text-transform: uppercase;
     border: #fc3636 2px solid;
     text-align: center;
+    font-family: 'Electrolize', sans-serif;
 }
 .resume:hover{
     border: #fc3636 2px solid;
