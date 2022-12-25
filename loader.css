@@ -10,7 +10,7 @@
     background-image: url('image/matte.jpg');
     z-index: 1;
   }
-.loading{
+#loading{
   font-size: 50px;
   font-weight: bold;
   color: white;
