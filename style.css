@@ -192,7 +192,7 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation: hue-rotate 60s linear infinite;
+    animation: hue-rotate 40s linear infinite;
 }
 
 .footer-area{
