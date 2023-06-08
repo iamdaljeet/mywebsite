@@ -25,7 +25,22 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .7;
+    animation: hue-rotate 15s linear infinite;
 }
+@keyframes hue-rotate {
+    from {
+      -webkit-filter: hue-rotate(0);
+      -moz-filter: hue-rotate(0);
+      -ms-filter: hue-rotate(0);
+      filter: hue-rotate(0);
+    }
+    to {
+      -webkit-filter: hue-rotate(360deg);
+      -moz-filter: hue-rotate(360deg);
+      -ms-filter: hue-rotate(360deg);
+      filter: hue-rotate(360deg);
+    }
+  }
 
 .home{
     width: 100%;
@@ -177,6 +192,7 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    animation: hue-rotate 60s linear infinite;
 }
 
 .footer-area{
@@ -283,6 +299,10 @@ footer{
 }
 
 @media (max-width:750px){
+    .navbar{
+        padding-top: 10px;
+    }
+   
     .project-area{
         display: block;
         width: 100%;
@@ -384,7 +404,11 @@ footer{
         display: inline;
     }
     .mytitle{
-        font-size: 36px;
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+    #imdesigner{
+        display: none;
     }
     p{
         word-spacing: normal;
