@@ -208,6 +208,7 @@ h6{
     }
     .myframe1{
         display: block;
+        border: 4px solid #ffffff81;
     }
     .about-mid-line{
         display: none;
@@ -227,7 +228,7 @@ h6{
     .myframe1{
         height: 100px;
         width: 100px;
-        border: 4px solid white;
+        border: 4px solid #ffffff81;
 
     }
 }
