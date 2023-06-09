@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Sono', sans-serif;
+    font-size: 16px;
+    color: #222222;
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
+    
+}
+::selection {
+    color: white;
+    background: #2222223a;
+  }
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    line-height: 30px;
+    word-spacing: 10px;
+}
+.colorchanger{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 2000px;
+    background-image: url("bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .7;
+    animation: hue-rotate 15s linear infinite;
+}
+@keyframes hue-rotate {
+    from {
+      -webkit-filter: hue-rotate(0);
+      -moz-filter: hue-rotate(0);
+      -ms-filter: hue-rotate(0);
+      filter: hue-rotate(0);
+    }
+    to {
+      -webkit-filter: hue-rotate(360deg);
+      -moz-filter: hue-rotate(360deg);
+      -ms-filter: hue-rotate(360deg);
+      filter: hue-rotate(360deg);
+    }
+  }
+
+.home{
+    width: 100%;
+    height: auto;
+
+}
+.navbar{
+    height: 50px;
+    width: 100%;
+    padding-top: 30px;
+}
+.nav{
+    height: 100%;
+    max-width: 1600px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+}
+.logo{
+    height: 50px;
+    position: fixed;
+}
+.logoimage{
+    height: 100%;
+}
+
+.navspace{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.navbutton{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+    padding:0px 10px 0px 30px;
+    margin: auto;
+    transition: .3s;
+    text-decoration: underline rgba(0, 0, 0, 0);
+}
+.navbutton:hover{
+    text-decoration: underline #222222;
+}
+
+.homecontant{
+    width: 990px;
+    margin: auto;
+    padding-top: 90px;
+}
+.hlobr{
+    display: none;
+}
+.mytitle{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+.mybio{
+    max-width: 750px;
+    padding-bottom: 60px;
+}
+.morebio{
+    font-weight: 500;
+    
+}
+.homeline{
+    width: 100%;
+    height: 1px;
+    background-color: #222222;
+}
+
+#projects{
+    width: 990px;
+    margin: auto;
+}
+.project-area{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin: 100px 0px 100px 0px;
+}
+.project-text{
+    width: 600px;
+    margin: auto 0px auto 0px;
+}
+.project-upper-text{
+    display: flex;
+    height: 140px;
+    max-width: 600px;
+    border-bottom: 1px solid #222222;
+}
+.project-title{
+    width: 460px;
+    height: 100%;
+}
+.project-name{
+    font-size: 48px;
+}
+
+.project-mid-line{
+    width: 1px;
+    height: 100%;
+    background-color: #222222;
+}
+.project-number{
+    width: 150px;
+    height: 100%;
+    align-items: center;
+}
+.project-count{
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    align-self: center;
+}
+.project-bio{
+    margin-top: 30px;
+}
+
+.project-visual{
+    box-sizing: border-box ;
+    height: 100%;
+    width: 232px;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 25px;
+    box-shadow: 17px 17px 48px rgba(0, 0, 0, 0.184);
+}
+.project-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.project-end-line{
+    height: 1px;
+    width: 100px;
+    background-color: #222222;
+    display: none;
+}
+
+
+.project-base-line{
+    height: 1px;
+    width: 100%;
+    background-color: #222222;
+}
+footer{
+    width: 100%;
+    height: fit-content;
+    background-image: url("footbg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: hue-rotate 40s linear infinite;
+}
+
+.footer-area{
+    margin: auto;
+    height: 450px;
+    width: 990px;
+    display: flex;
+    padding-bottom: 50px;
+}
+.foot-image{
+    width: 50%;
+    height: 100%;
+}
+.footimg{
+    margin-top: 250px;
+    height: 200px;
+    width: 350px;
+}
+.foot-text{
+    width: 50%;
+}
+.foot-title{
+    text-align: right;
+    font-size: 48px;
+    padding-top: 250px;
+    padding-bottom: 50px;
+}
+.foot-links{
+    height: auto;
+    display: flex;
+}
+.faltuspace{
+    box-sizing: border-box;
+    width: 100%;
+}
+.foot-media{
+    margin-left: 15px;
+    text-decoration: none;
+    text-align: right;
+}
+.brbe{
+    display: none;
+}
+
+
+@media (max-width: 1024px){
+
+    .homecontant{
+        width: 850px;
+        padding-top: 50px;
+    }
+
+    #projects{
+        width: 850px;
+    }
+
+    .footer-area{
+        width: 850px;
+    }
+
+    .mybio{
+        padding-bottom: 100px;
+    }
+    .footer-area{
+        height: 400px;
+        width: 850px;
+    }
+    .footimg{
+        margin-top: 200px;
+    }
+    .foot-title{
+        padding-top: 200px;
+    }
+}
+
+@media (max-width: 900px){
+
+    .logo{
+        height: 50px;
+        position: relative;
+    }
+    .mytitle{
+        font-size: 48px;
+    }
+    .homecontant{
+        width: 90%;
+    }
+    #projects{
+        width: 90%;
+    }
+    .footer-area{
+        width: 90%;
+    }
+    .project-text{
+        width: 400px;
+        margin: auto 0px auto 0px;
+    }
+    .project-title{
+        width: 650px;
+    }
+    .project-name{
+        font-size: 36px;
+    }
+}
+
+@media (max-width:750px){
+    .navbar{
+        padding-top: 10px;
+    }
+   
+    .project-area{
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .project-upper-text{
+        display: block;
+        height: 100px;
+        max-width: 90%;
+        border: none;
+    }
+    .project-title{
+        width: 100%;
+        height: auto;
+    }
+    .project-mid-line{
+        display: none;
+    }
+    .project-number{
+        display: none;
+    }
+    .project-bio{
+        width: 100%;
+        margin: 0%;
+    }
+    .project-visual{
+        height: 409px;
+        width: 190px;
+        margin: 50px 0px;
+    }
+    .project-text{
+        width: 100%;
+        margin: auto 0px auto 0px;
+    }
+    .footer-area{
+        margin: auto;
+        height: fit-content;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .project-end-line{
+        display: inline-block;
+        width: 300px;
+    }
+
+    .foot-image{
+        display: none;
+    }
+    .foot-text{
+        width: 90%;
+        margin: auto;
+    }
+    .foot-title{
+        text-align: left;
+        font-size: 36px;
+        padding-top: 150px;
+        padding-bottom: 40px;
+    }
+    .faltuspace{
+        display: none;
+    }
+    .foot-media{
+        margin-right: 15px;
+        margin-left: 0px;
+        text-decoration: none;
+        
+    }
+    
+}
+
+@media (max-width:540px){
+    .mytitle{
+        font-size: 40px;
+    }
+    .project-end-line{
+        width: 100px;
+    }
+    .project-area{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+@media (max-width:460px){
+    *{
+        letter-spacing: normal;
+    }
+    .nav{
+        width: 90%;
+    }
+    .navbutton{
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 0px;
+        font-weight: 500;
+    }
+    .hlobr{
+        display: inline;
+    }
+    .mytitle{
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+    #imdesigner{
+        display: none;
+    }
+    p{
+        word-spacing: normal;
+        line-height: 25px;
+    }
+    .mybio{
+        padding-bottom: 50px;
+        
+    }
+    .project-upper-text{
+        height: 80px;
+    }
+
+
+    .project-name{
+        font-size: 28px;
+        text-align: justify;
+    }
+    .project-visual{
+        height: 345px;
+        width: 160px;
+        margin: 30px 0px;
+    }
+    .foot-title{
+        text-align: left;
+        font-size: 36px;
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    .foot-media{
+        font-size: 14px;
+    }
+    .brbe{
+        display: inline;
+    }
+}
